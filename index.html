@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 class="header-logo">8 Bit Video Converter</h1>
+    </header>
+    <main>
+        <div class="help">
+            <div class="cvs-example">
+                <h3>Example:</h3>
+                <img src="/img/ChildrenOfTheCity.jpg" class="example" id="example1" />
+                <canvas id="exampleCvs1"></canvas>
+            </div>
+            <h3 class="example-text">
+                All you have to do is upload a video/image as background to simulate it's like it's on an old console
+            </h3>
+        </div>
+        <div class="help">
+            <h3 class="example-text">
+                You can also upload a music and it will also sound like the old 8-bit
+            </h3>
+            <div class="cvs-example">
+                <h3>Example:</h3>
+                <div class="audio-controls">
+                    <audio src="./sound/LoRPiano.mp3" id="exampleAudio1"></audio>
+                    <img class="controls" src="/svg/play.svg" id="controls1" />
+                    <img src="/img/Ironlotus.jpg" class="example" id="example2" />
+                </div>
+                <div class="audio-controls">
+                    <audio src="./sound/LoRPiano.mp3" id="exampleAudio2"></audio>
+                    <img class="controls" src="/svg/play.svg" id="controls2" />
+                    <img src="/img/Ironlotus.jpg" class="example" id="example2" />
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            <h2>Try you</h2>
+        </div>
+
+        <div class="content">
+            <canvas id="cvs"></canvas>
+            <div class="render-control">
+                <div class="inputs">
+                    <h3>Background (image/video)</h3>
+                    <input type="file" class="file" id="img" accept="image/*, video/*">
+                    <h3>Audio (audio)</h3>
+                    <input type="file" class="file" id="audio" accept="audio/*">
+                </div>
+                <div class="left-bar">
+                    <div class="control-container">
+                        <img class="controls" src="/svg/play.svg" id="controls" />
+                    </div>
+                    <h3>Pixelize ratio:</h3>
+                    <input type="text" class="ratio-input" id="ratio" value="1" />
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js" type="module"></script>
+</body>
+</html>
